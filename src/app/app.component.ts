@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-jakrit';
+  parentCount = 0;
+
+  addparentCount(){
+    this.parentCount++;
+  }
+ 
+  clearInParent(val : any){
+    this.parentCount = val;
+  }
 }
